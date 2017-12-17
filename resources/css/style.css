@@ -1,6 +1,19 @@
 div {
   border: 1px solid black;
 }
+
+a {
+  color: black;
+}
+
+body {
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
+}
+
+/* Header */
+
 header {
   display: flex;
   align-items: center;
@@ -14,33 +27,108 @@ header {
   font-size: 14px;
   font-weight: bold;
 }
+
 .logo {
   display: flex;
   align-items: center;
   flex-grow: 1;
   padding-left: 30px;
 }
+
 .logo img {
   width: 70px;
   height: 60px;
   margin-right: 12px;
 }
+
 .logo span {
   color: MediumAquaMarine;
 }
+
 header nav {
   padding-right: 40px;
 }
+
 nav span {
   display: inline-block;
   padding: 20px 10px;
 }
-a {
-  color: black;
-}
+
+/* Main Content Container*/
+
 .content {
   display: flex;
+  justify-content: space-between;
   width: 1232px;
   margin: 0 auto 78px auto;
   padding-top: 116px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  margin-right: 32px;
+}
+
+.stories {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+/* Large Column */
+
+.column .large {
+  width: 630px;
+}
+
+.lead-story .image-content {
+  background-image: url("../images/img-story-main.png");
+  font-size: 40px;
+}
+
+.image-content.earth {
+  background-image: url("../images/img-story-2.png");
+}
+
+.image-content.photo {
+  background-image: url("../images/img-story-3.png");
+}
+
+
+/* Medium Column */
+
+.column .medium {
+  width: 300px;
+}
+
+.image-content.cats {
+  background-image: url("../images/img-story-1.png");
+}
+
+/* Small Column */
+
+.column .small {
+  width: 240px;
+}
+
+.news-bites span {
+
+}
+
+/* Universal Styles News Stories */
+
+.image-content {
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+}
+
+.image-content span {
+  color: white;
 }
