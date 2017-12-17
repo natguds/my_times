@@ -1,3 +1,6 @@
+div {
+  border: 1px solid black;
+}
 header {
   display: flex;
   align-items: center;
@@ -14,11 +17,30 @@ header {
 .logo {
   display: flex;
   align-items: center;
+  flex-grow: 1;
   padding-left: 30px;
+}
+.logo img {
+  width: 70px;
+  height: 60px;
+  margin-right: 12px;
+}
+.logo span {
   color: MediumAquaMarine;
 }
-nav a {
+header nav {
+  padding-right: 40px;
+}
+nav span {
   display: inline-block;
-  margin: 10px;
+  padding: 20px 10px;
+}
+a {
   color: black;
+}
+.content {
+  display: flex;
+  width: 1232px;
+  margin: 0 auto 78px auto;
+  padding-top: 116px;
 }
